@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep H - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💻%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Sandeep H</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#platforms" class="nav-link">Platforms</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Sandeep H</span>
+                    </h1>
+                    <p class="hero-subtitle">AI/ML Enthusiast | Data Science Student | Python Developer</p>
+                    <p class="hero-description">
+                        Pursuing B.Tech in CSE at PES University and BS in Data Science at IIT Madras. 
+                        Passionate about Machine Learning, MLOps, and building intelligent applications with PyTorch and Python.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a passionate learner pursuing B.Tech in CSE from PES University and BS in Data Science 
+                            from IIT Madras. My interests lie at the intersection of Machine Learning, MLOps, and applied AI. 
+                            I actively explore projects involving AI assistants, speech recognition, automation, and real-time data applications.
+                        </p>
+                        <p>
+                            Currently focused on mastering Deep Learning with PyTorch and building end-to-end ML pipelines 
+                            using tools like ZenML. I have earned certifications in Python Essentials for MLOps from Duke University 
+                            and various SQL certifications from HackerRank. I have successfully deployed ML models on Hugging Face 
+                            and actively work on MLOps projects with comprehensive pipeline implementations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag"><i class="devicon-python-plain colored"></i> Python</span>
+                            <span class="skill-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                            <span class="skill-tag"><i class="devicon-java-plain colored"></i> Java</span>
+                            <span class="skill-tag"><i class="devicon-c-plain colored"></i> C</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag"><i class="devicon-html5-plain colored"></i> HTML5</span>
+                            <span class="skill-tag"><i class="devicon-css3-plain colored"></i> CSS3</span>
+                            <span class="skill-tag"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+                            <span class="skill-tag"><i class="devicon-express-original"></i> Express.js</span>
+                            <span class="skill-tag"><i class="devicon-flask-original"></i> Flask</span>
+                            <span class="skill-tag"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-brain"></i> AI/ML & Data Science</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag"><i class="devicon-pytorch-original colored"></i> PyTorch</span>
+                            <span class="skill-tag"><i class="devicon-numpy-original colored"></i> NumPy</span>
+                            <span class="skill-tag"><i class="devicon-pandas-original colored"></i> Pandas</span>
+                            <span class="skill-tag"><i class="fas fa-chart-line"></i> Matplotlib</span>
+                            <span class="skill-tag"><i class="fas fa-robot"></i> Deep Learning</span>
+                            <span class="skill-tag"><i class="fas fa-brain"></i> Machine Learning</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> Databases & Backend</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                            <span class="skill-tag"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+                            <span class="skill-tag"><i class="fas fa-plug"></i> REST APIs</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag"><i class="devicon-googlecloud-plain colored"></i> Google Cloud</span>
+                            <span class="skill-tag"><i class="devicon-docker-plain colored"></i> Docker</span>
+                            <span class="skill-tag"><i class="devicon-git-plain colored"></i> Git</span>
+                            <span class="skill-tag"><i class="devicon-github-original"></i> GitHub</span>
+                            <span class="skill-tag"><i class="fas fa-infinity"></i> MLOps</span>
+                            <span class="skill-tag"><i class="fas fa-cogs"></i> ZenML</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag"><i class="devicon-vscode-plain colored"></i> VS Code</span>
+                            <span class="skill-tag"><i class="fas fa-terminal"></i> CLI Development</span>
+                            <span class="skill-tag"><i class="fas fa-vial"></i> pytest</span>
+                            <span class="skill-tag"><i class="fas fa-sitemap"></i> Data Structures</span>
+                            <span class="skill-tag"><i class="fas fa-calculator"></i> Algorithms</span>
+                            <span class="skill-tag"><i class="fas fa-square-root-alt"></i> Linear Algebra</span>
+                            <span class="skill-tag"><i class="fas fa-chart-pie"></i> Statistics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications">
+            <div class="container">
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <div class="certifications-grid" id="certifications-container">
+                    <!-- Certifications will be loaded dynamically via JavaScript -->
+                    <div class="loading">Loading certifications...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid" id="projects-container">
+                    <!-- Projects will be loaded dynamically via JavaScript -->
+                    <div class="loading">Loading projects...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platforms Section -->
+        <section id="platforms" class="platforms">
+            <div class="container">
+                <h2 class="section-title">Find Me On</h2>
+                <div class="platforms-grid">
+                    <a href="https://www.linkedin.com/in/sandeep-h-305606336" target="_blank" class="platform-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/SandeepH2706" target="_blank" class="platform-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://leetcode.com/sandeeph2706" target="_blank" class="platform-link">
+                        <i class="fas fa-code"></i>
+                        <span>LeetCode</span>
+                    </a>
+                    <a href="https://huggingface.co/Sandeep2706" target="_blank" class="platform-link">
+                        <i class="fas fa-robot"></i>
+                        <span>Hugging Face</span>
+                    </a>
+                    <a href="https://www.hackerrank.com/sandeeph2706" target="_blank" class="platform-link">
+                        <i class="fas fa-trophy"></i>
+                        <span>HackerRank</span>
+                    </a>
+                    <a href="mailto:sandeephgowda8618@gmail.com" class="platform-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's work together!</h3>
+                        <p>I'm always interested in hearing about new opportunities and interesting projects.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>sandeephgowda8618@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 8618703273</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>PES EC Campus, 2nd Year</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-university"></i>
+                                <span>IIT Madras BS Degree</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container"></div>
+            <p>&copy; 2025 Sandeep H. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Certificate Popup Modal -->
+    <div id="certificate-modal" class="certificate-modal">
+        <div class="certificate-modal-content">
+            <span class="certificate-modal-close">&times;</span>
+            <div class="certificate-modal-header">
+                <h3 id="certificate-title">Certificate</h3>
+            </div>
+            <div class="certificate-modal-body">
+                <img id="certificate-image" src="" alt="Certificate" class="certificate-image">
+                <div class="certificate-details">
+                    <p id="certificate-issuer"></p>
+                    <p id="certificate-date"></p>
+                    <p id="certificate-id"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

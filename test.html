@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+</head>
+<body>
+    <h1>API Test Page</h1>
+    <div id="projects-test"></div>
+    <div id="certifications-test"></div>
+    
+    <script>
+        console.log('Test page loaded');
+        
+        async function testAPI() {
+            try {
+                console.log('Testing projects API...');
+                const projectsResponse = await fetch('/api/projects');
+                const projectsData = await projectsResponse.json();
+                console.log('Projects:', projectsData);
+                document.getElementById('projects-test').innerHTML = `<h2>Projects: ${projectsData.projects.length} found</h2>`;
+                
+                console.log('Testing certifications API...');
+                const certsResponse = await fetch('/api/certifications');
+                const certsData = await certsResponse.json();
+                console.log('Certifications:', certsData);
+                document.getElementById('certifications-test').innerHTML = `<h2>Certifications: ${certsData.length} found</h2>`;
+                
+            } catch (error) {
+                console.error('Error:', error);
+                document.body.innerHTML += `<p style="color: red;">Error: ${error}</p>`;
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', testAPI);
+    </script>
+</body>
+</html>

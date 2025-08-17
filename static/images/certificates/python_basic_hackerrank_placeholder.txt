@@ -1,0 +1,2 @@
+<!-- This is a placeholder for the HackerRank Python Basic certificate image -->
+<!-- The actual certificate image should be saved as python_basic_hackerrank.jpg -->

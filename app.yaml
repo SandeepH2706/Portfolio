@@ -1,0 +1,22 @@
+runtime: python39
+
+env_variables:
+  FLASK_ENV: production
+  SECRET_KEY: "ca85c0d03091b3d96288f95a6f2b0b6c01fbe06d9cf519f42e1c25fb3deb8ced"
+  PYTHONPATH: /app
+
+automatic_scaling:
+  min_instances: 0
+  max_instances: 10
+  target_cpu_utilization: 0.6
+  target_throughput_utilization: 0.6
+  max_concurrent_requests: 80
+
+handlers:
+- url: /static
+  static_dir: static
+  secure: always
+
+- url: /.*
+  script: main.app
+  secure: always

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep H - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Sandeep H</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#courses" class="nav-link">Courses</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Sandeep H</span>
+                    </h1>
+                    <p class="hero-subtitle">AI/ML Enthusiast | Data Science Student | Python Developer</p>
+                    <p class="hero-description">
+                        Pursuing B.Tech in CSE at PES University and BS in Data Science at IIT Madras. 
+                        Passionate about Machine Learning, MLOps, and building intelligent applications with PyTorch and Python.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a passionate learner pursuing B.Tech in CSE from PES University and BS in Data Science 
+                            from IIT Madras. My interests lie at the intersection of Machine Learning, MLOps, and applied AI. 
+                            I actively explore projects involving AI assistants, speech recognition, automation, and real-time data applications.
+                        </p>
+                        <p>
+                            Currently focused on mastering Deep Learning with PyTorch and building end-to-end ML pipelines 
+                            using tools like ZenML. I have earned certifications in Python Essentials for MLOps from Duke University 
+                            and various SQL certifications from HackerRank. I have successfully deployed ML models on Hugging Face 
+                            and actively work on MLOps projects with comprehensive pipeline implementations.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <h3>5+</h3>
+                                <p>Certifications</p>
+                            </div>
+                            <div class="stat">
+                                <h3>4</h3>
+                                <p>Current Courses</p>
+                            </div>
+                            <div class="stat">
+                                <h3>1</h3>
+                                <p>HF Model Deployed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>AI/ML & Data Science</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">Seaborn</span>
+                            <span class="skill-tag">Deep Learning</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>MLOps & Tools</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">ZenML</span>
+                            <span class="skill-tag">MLOps</span>
+                            <span class="skill-tag">CLI Development</span>
+                            <span class="skill-tag">API Development</span>
+                            <span class="skill-tag">pytest</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Mathematics & Core</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Linear Algebra</span>
+                            <span class="skill-tag">Statistics</span>
+                            <span class="skill-tag">DSA</span>
+                            <span class="skill-tag">DBMS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications">
+            <div class="container">
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <div class="certifications-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Python Essentials for MLOps</h3>
+                        <p class="cert-issuer">Duke University - Coursera</p>
+                        <p class="cert-date">July 2025</p>
+                        <p class="cert-id">Credential ID: N75A8AWQPGPI</p>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Intermediate SQL Certificate</h3>
+                        <p class="cert-issuer">HackerRank</p>
+                        <p class="cert-date">February 2025</p>
+                        <p class="cert-id">Credential ID: PES2UG24CS440</p>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Python (Basic) Certificate</h3>
+                        <p class="cert-issuer">HackerRank</p>
+                        <p class="cert-date">December 2024</p>
+                        <p class="cert-id">Credential ID: PES2UG24CS440</p>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>PyTorch Workshop Completion</h3>
+                        <p class="cert-issuer">IIT Madras</p>
+                        <p class="cert-date">2025</p>
+                        <p class="cert-desc">Deep Learning & Neural Networks</p>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Foundation Level Completion</h3>
+                        <p class="cert-issuer">IIT Madras BS Program</p>
+                        <p class="cert-date">2024</p>
+                        <p class="cert-desc">Data Science & Applications</p>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI Training Program</h3>
+                        <p class="cert-issuer">Stellaraa Edutech - NSDC</p>
+                        <p class="cert-date">2024</p>
+                        <p class="cert-desc">4-week Intensive AI Course</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Courses Section -->
+        <section id="courses" class="courses">
+            <div class="container">
+                <h2 class="section-title">Current Courses</h2>
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Modern Application Development I</h3>
+                        <p class="course-category">PROGRAMMING</p>
+                        <p class="course-status">Current Course</p>
+                        <p class="course-institution">IIT Madras</p>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Machine Learning Techniques</h3>
+                        <p class="course-category">DATA SCIENCE</p>
+                        <p class="course-status">Current Course</p>
+                        <p class="course-institution">IIT Madras</p>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Machine Learning Foundations</h3>
+                        <p class="course-category">DATA SCIENCE</p>
+                        <p class="course-status">Current Course</p>
+                        <p class="course-institution">IIT Madras</p>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Database Management Systems</h3>
+                        <p class="course-category">PROGRAMMING</p>
+                        <p class="course-status">Current Course</p>
+                        <p class="course-institution">IIT Madras</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>ML Model Deployment - Hugging Face</h3>
+                            <p>Successfully deployed a machine learning model on Hugging Face platform, making it accessible for real-time inference. Complete end-to-end deployment with model hosting and API integration.</p>
+                            <div class="project-tech">
+                                <span>Hugging Face</span>
+                                <span>Model Deployment</span>
+                                <span>Python</span>
+                                <span>API Integration</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/SandeepH2706" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://huggingface.co" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> HF Model
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>ML Pipeline with ZenML</h3>
+                            <p>Built comprehensive MLOps pipeline using ZenML with data ingestion, feature engineering, model building, and evaluation steps. Includes model registration and deployment capabilities.</p>
+                            <div class="project-tech">
+                                <span>ZenML</span>
+                                <span>MLOps</span>
+                                <span>Pipeline</span>
+                                <span>Python</span>
+                                <span>scikit-learn</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/SandeepH2706" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-project-diagram"></i> Pipeline View
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>ML_IITM - Course Projects</h3>
+                            <p>Collection of machine learning projects developed as part of IIT Madras coursework. Includes implementations of various ML algorithms, data analysis, and comprehensive documentation.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>NumPy</span>
+                                <span>Pandas</span>
+                                <span>scikit-learn</span>
+                                <span>Matplotlib</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/SandeepH2706" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-book"></i> Documentation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Fashion MNIST CNN Classifier</h3>
+                            <p>Built a Convolutional Neural Network for image classification using the Fashion MNIST dataset. Implemented using PyTorch with comprehensive model training and evaluation.</p>
+                            <div class="project-tech">
+                                <span>PyTorch</span>
+                                <span>CNN</span>
+                                <span>Fashion MNIST</span>
+                                <span>Deep Learning</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/SandeepH2706" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Colab
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Linear Regression Models</h3>
+                            <p>Implemented Single and Multiple Linear Regression models from scratch and using scikit-learn. Focused on understanding mathematical foundations and real-world applications.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>NumPy</span>
+                                <span>Pandas</span>
+                                <span>Matplotlib</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/SandeepH2706" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Colab
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>PyTorch Neural Network</h3>
+                            <p>Built neural networks from scratch using PyTorch, implementing backpropagation manually and visualizing computation graphs using torchviz for better understanding.</p>
+                            <div class="project-tech">
+                                <span>PyTorch</span>
+                                <span>Neural Networks</span>
+                                <span>Backpropagation</span>
+                                <span>torchviz</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/SandeepH2706" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's work together!</h3>
+                        <p>I'm always interested in hearing about new opportunities and interesting projects.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>sandeeph@example.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>PES EC Campus, 2nd Year</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-university"></i>
+                                <span>IIT Madras BS Degree</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <div class="social-link-container">
+                                <a href="https://www.linkedin.com/in/sandeep-h-305606336" target="_blank" class="social-link">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <div class="badges-tooltip">
+                                    <div class="badge">
+                                        <img src="https://img.shields.io/badge/IIT%20Madras-BS%20Data%20Science-blue?style=for-the-badge" alt="IIT Madras Badge">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-link-container">
+                                <a href="https://github.com/SandeepH2706" target="_blank" class="social-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <div class="badges-tooltip">
+                                    <div class="badge">
+                                        <img src="https://img.shields.io/github/followers/SandeepH2706?style=for-the-badge&logo=github" alt="GitHub Followers">
+                                    </div>
+                                    <div class="badge">
+                                        <img src="https://img.shields.io/badge/Python-Expert-green?style=for-the-badge&logo=python" alt="Python Badge">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-link-container">
+                                <a href="https://leetcode.com/u/Sandeeph2706/" target="_blank" class="social-link">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <div class="badges-tooltip">
+                                    <div class="badge">
+                                        <img src="https://img.shields.io/badge/LeetCode-Problems%20Solved-orange?style=for-the-badge&logo=leetcode" alt="LeetCode Badge">
+                                    </div>
+                                    <div class="badge">
+                                        <img src="https://img.shields.io/badge/DSA-Active-red?style=for-the-badge" alt="DSA Badge">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-link-container">
+                                <a href="https://www.hackerrank.com/profile/PES2UG24CS440" target="_blank" class="social-link">
+                                    <i class="fab fa-hackerrank"></i>
+                                </a>
+                                <div class="badges-tooltip">
+                                    <div class="badge">
+                                        <img src="https://img.shields.io/badge/Python-Basic%20Certified-brightgreen?style=for-the-badge&logo=hackerrank" alt="Python Certificate">
+                                    </div>
+                                    <div class="badge">
+                                        <img src="https://img.shields.io/badge/SQL-Intermediate%20Certified-blue?style=for-the-badge&logo=hackerrank" alt="SQL Certificate">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sandeep H. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

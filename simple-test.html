@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Direct API Test</title>
+</head>
+<body>
+    <h1>Direct Test</h1>
+    
+    <h2>Projects Test</h2>
+    <div id="projects-container">Loading...</div>
+    
+    <h2>Certifications Test</h2>
+    <div id="certifications-container">Loading...</div>
+    
+    <script>
+        async function loadProjects() {
+            console.log('Loading projects...');
+            const container = document.getElementById('projects-container');
+            console.log('Container found:', container);
+            
+            try {
+                const response = await fetch('/api/projects');
+                const data = await response.json();
+                console.log('Projects data:', data);
+                
+                container.innerHTML = '<h3>Projects loaded: ' + data.projects.length + '</h3>';
+                data.projects.forEach(project => {
+                    container.innerHTML += '<div style="border: 1px solid #ccc; margin: 10px; padding: 10px;"><h4>' + project.title + '</h4><p>' + project.description + '</p></div>';
+                });
+            } catch (error) {
+                console.error('Error:', error);
+                container.innerHTML = 'Error loading projects: ' + error;
+            }
+        }
+        
+        async function loadCertifications() {
+            console.log('Loading certifications...');
+            const container = document.getElementById('certifications-container');
+            console.log('Container found:', container);
+            
+            try {
+                const response = await fetch('/api/certifications');
+                const data = await response.json();
+                console.log('Certifications data:', data);
+                
+                container.innerHTML = '<h3>Certifications loaded: ' + data.length + '</h3>';
+                data.forEach(cert => {
+                    container.innerHTML += '<div style="border: 1px solid #ccc; margin: 10px; padding: 10px;"><h4>' + cert.title + '</h4><p>' + cert.issuer + ' (' + cert.date_earned + ')</p></div>';
+                });
+            } catch (error) {
+                console.error('Error:', error);
+                container.innerHTML = 'Error loading certifications: ' + error;
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, starting tests...');
+            loadProjects();
+            loadCertifications();
+        });
+    </script>
+</body>
+</html>

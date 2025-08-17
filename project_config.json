@@ -1,0 +1,93 @@
+{
+  "projects": [
+    {
+      "id": "mechanical-assignment",
+      "title": "Mechanical Assignment Portal",
+      "description": "A Flask web application designed for mechanical engineering students to submit assignment answers for manufacturing processes questionnaire. Features secure authentication, unique answer validation, and comprehensive student management.",
+      "technologies": [
+        "Flask",
+        "Python",
+        "Web Development",
+        "Authentication",
+        "SQLite",
+        "Bootstrap"
+      ],
+      "github_url": "https://github.com/SandeepH2706/Mechanical-Assignment",
+      "live_url": "https://mechanical-assignment-7od7n7hc4q-uc.a.run.app/",
+      "featured": true
+    },
+    {
+      "id": "c-project",
+      "title": "Prescription Management System",
+      "description": "A comprehensive C-based prescription management system for healthcare providers. Features patient management, prescription tracking, and medical record maintenance with efficient data structures and algorithms.",
+      "technologies": [
+        "C Programming",
+        "Data Structures",
+        "Algorithms",
+        "File Management",
+        "System Programming"
+      ],
+      "github_url": "https://github.com/SandeepH2706/C_project",
+      "live_url": "https://prescription-app-431826166991.us-central1.run.app/",
+      "featured": true
+    },
+    {
+      "id": "farmer-platform",
+      "title": "Farmer Platform",
+      "description": "A comprehensive platform designed to connect farmers with modern agricultural solutions, market access, and essential farming resources. Built to bridge the gap between traditional farming and technology.",
+      "technologies": [
+        "Flask",
+        "Python",
+        "Web Development",
+        "Agriculture Tech",
+        "Database"
+      ],
+      "github_url": "https://github.com/SandeepH2706/farmer-platform",
+      "live_url": "#",
+      "featured": true
+    },
+    {
+      "id": "huggingface-deployment",
+      "title": "Hugging Face ML Model Deployment",
+      "description": "Deployed machine learning models on Hugging Face Hub with comprehensive model cards and inference APIs. Featured models and datasets for computer vision and NLP tasks.",
+      "technologies": [
+        "Hugging Face",
+        "Python",
+        "Transformers",
+        "ML Deployment",
+        "Model Cards"
+      ],
+      "github_url": "https://github.com/SandeepH2706/ML_Huggingface",
+      "live_url": "https://huggingface.co/Sandeep2706",
+      "featured": true
+    },
+    {
+      "id": "zenml-mlops",
+      "title": "ZenML MLOps Pipeline",
+      "description": "Built end-to-end MLOps pipelines using ZenML for automated model training, evaluation, and deployment. Implemented CI/CD for machine learning workflows.",
+      "technologies": [
+        "ZenML",
+        "MLOps",
+        "Python",
+        "Pipeline Automation"
+      ],
+      "github_url": "https://github.com/SandeepH2706/MLOPs_ZenML",
+      "live_url": "#",
+      "featured": true
+    },
+    {
+      "id": "ml-iitm",
+      "title": "ML_IITM Course Repository",
+      "description": "Comprehensive collection of machine learning implementations and assignments from IIT Madras coursework. Covers supervised and unsupervised learning algorithms.",
+      "technologies": [
+        "Python",
+        "Scikit-learn",
+        "NumPy",
+        "Pandas"
+      ],
+      "github_url": "https://github.com/SandeepH2706/ML_IITM",
+      "live_url": "#",
+      "featured": true
+    }
+  ]
+}
