@@ -164,4 +164,20 @@ window.addEventListener('load', function() {
     loadCertifications();
 });
 
+// Responsive navigation menu toggle
+const navToggle = document.getElementById('nav-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+if (navToggle && navMenu) {
+    navToggle.addEventListener('click', function () {
+        navMenu.classList.toggle('active');
+    });
+    // Optional: close menu when a link is clicked (for better UX)
+    navMenu.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+}
+
 console.log('Script loaded successfully');
